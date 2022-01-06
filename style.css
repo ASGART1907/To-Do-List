@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container{
+    position: absolute;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 10px 15px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.title{
+    margin:0;
+}
+
+.subtitle{
+    margin: 0 0 10px;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.header{
+    background-color:darkblue;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header input{
+    background-color: skyblue;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.header iput:focus{
+    outline: none;
+}
+
+.user-list{
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.user-list li{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-list li:hover{ 
+    background-color: lavender;
+}
+
+
+.user-list li i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.user-list li:not(:last-of-type){
+    border-bottom: 1px solid gray;
+}
+
+.user-list li.hide{
+    display: none;
+}
